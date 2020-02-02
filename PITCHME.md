@@ -1,7 +1,9 @@
-### SRE in Scalar
-
-
-　　　　　Kun Tei(@tei-k)
+### SRE in Scalar (2020-1Q)
+　  
+　  
+　  
+　  
+　　　id:tei-k
 ---
 
 ### Mission
@@ -50,6 +52,9 @@
 ---
 
 ### What are your impactful contributions to Scalar in the last Quarter?
+- 1. New design for Orchestration Tool |
+- 2. CI Test in Github Actions for Terraform |
+- 3. Display correct status in Prometheus |
 
 ---
 
@@ -58,23 +63,39 @@ https://github.com/scalar-labs/scalar-terraform
 
 ---
 
-### Old:
-- main.tf -> module (bai, chiku, sho)
+### Current
+- Directory structure |
+```
+- main -> module (bai, chiku, sho)
 - module(bai, chiku, sho) -> module(base)
 - module (base) -> moudle(network), module(cassandra), module(scalardl),module(monitor),...
 - module(scalardl) -> module(universal)
+```
 
 ---
 
-### New:
-- network.tf -> module(network) -> module(universal)
-- cassandra.tf -> module(cassandra) -> module(universal)
-- scalardl.tf -> module(scalardl) -> module(universal)
-- monitor.tf -> module(monitor) -> module(universal)
+![](https://i.imgur.com/62V9bsp.jpg)
 
 ---
 
-### Why they are important to the company?
+### New Design
+- Directory structure |
+```
+- network -> module(network) -> module(universal)
+- cassandra -> module(cassandra) -> module(universal)
+- scalardl -> module(scalardl) -> module(universal)
+- monitor -> module(monitor) -> module(universal)
+```
+
+---
+
+![](https://i.imgur.com/Jm8N6hk.jpg)
+
+---
+
+### Improvement Effect
+- Simply |
+- Maintenable |
 
 ---
 
