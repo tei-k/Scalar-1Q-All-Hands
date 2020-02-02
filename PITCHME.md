@@ -1,21 +1,34 @@
-### SRE in Scalar (2020-1Q)
+## SRE in Scalar (20-1Q)
 　  
 　  
-　  
-　  
-　　　id:tei-k
+
+
+　   2020.02.03
+　　　id:@tei-k
+---
+### $WHOAMI
+
+![](https://s.gravatar.com/avatar/6a288829cb26612a60633169a0ea480b.jpeg)
+
+- id: @tei-k (Kun Tei)
+- Job: FE (SRE & Infrastructure)
+- Language:
+  - Terraform:, :Ansible:, :Packer:, Python, :Ruby:, :GO:
+  - 🇨🇳🇯🇵🇰🇷...
+- Join: 2019/12/02 〜 (Full Time)
+
 ---
 
-### Mission
-- Paying off technical debt! |
-- Migration to Azure |
-- Easy to use orchestration tool to partners and Scalar delivery team |
-- Enhancements |
-- Make yourself confident of Infra orchestration and operations |
+## Mission
+- 1️⃣Paying off technical debt! |
+- 2️⃣Migration to Azure |
+- 3️⃣Easy to use orchestration tool to partners and Scalar delivery team |
+- 4️⃣Enhancements |
+- 5️⃣Make yourself confident of Infra orchestration and operations |
 
 ---
 
-### Paying off technical debt!
+### 1️⃣Paying off technical debt!
 - Scalar deployment can be broken up into loosely coupled modules |
 - C* can be automatically started when deployed |
 - Scalar cluster can be deployed simply |
@@ -25,52 +38,52 @@
 
 ---
 
-### Migration to Azure
+### 2️⃣Migration to Azure
 - Production-simulated testing is running in Azure |
 - Sandbox is running with the orchestration tool and Scalar DLT in Azure |
 
 ---
 
-### Easy to use orchestration tool to partners and Scalar delivery team
+### 3️⃣Easy to use orchestration tool to partners and Scalar delivery team
 - Terraform itself and its modules are upgraded to the newest version |
 - The docs are updated and organized and easier to follow by partners |
 - The tool is publicly available under Apache 2 license |
 
 ---
 
-### Enhancements
+### 4️⃣Enhancements
 - Scheduled operations can be configured easily (with k8s or Rundeck) |
 - A customized docker cluster can be deployed and managed (with k8s) |
 - (STRETCH) Stateless servers can be deployed and managed with k8s |
 
 ---
 
-### Make yourself confident of Infra orchestration and operations
+### 5️⃣Make yourself confident of Infra orchestration and operations
 - Regular normal case operations (upgrade scalardl, backup, repair, ...) are conducted in the production-simulated testing environment |
 - Destructive testing is conducted regularly |
 
 ---
 
-### What are your impactful contributions to Scalar in the last Quarter?
-- 1. New design for Orchestration Tool |
-- 2. CI Test in Github Actions for Terraform |
-- 3. Display correct status in Prometheus |
+## Contributions 👷
+- New design for Orchestration Tool |
+- UP terraform version to latest |
+- CI Test in Github Actions for Terraform |
+- Integration Test in Github Actions with Terratest |
+- Display correct status in Prometheus |
 
 ---
 
-### 1. New design for Orchestration Tool
+### 1. New design for Orchestration Tool ❇️
 https://github.com/scalar-labs/scalar-terraform
 
 ---
 
-### Current
-- Directory structure |
-```
-- main -> module (bai, chiku, sho)
-- module(bai, chiku, sho) -> module(base)
-- module (base) -> moudle(network), module(cassandra), module(scalardl),module(monitor),...
-- module(scalardl) -> module(universal)
-```
+#### Current
+- main -> |
+- module(bai, chiku, sho) -> |
+- module (base) -> |
+- module(scalardl) -> |
+- module(universal) |
 
 ---
 
@@ -78,14 +91,10 @@ https://github.com/scalar-labs/scalar-terraform
 
 ---
 
-### New Design
-- Directory structure |
-```
-- network -> module(network) -> module(universal)
-- cassandra -> module(cassandra) -> module(universal)
-- scalardl -> module(scalardl) -> module(universal)
-- monitor -> module(monitor) -> module(universal)
-```
+#### New
+- network -> |
+- module (scalardl) -> |
+- module (universal) |
 
 ---
 
@@ -93,61 +102,135 @@ https://github.com/scalar-labs/scalar-terraform
 
 ---
 
-### Improvement Effect
-- Simply |
-- Maintenable |
+#### Improvement Effect
+- Simply 🔰 |
+- Maintenable 🏗 |
+- Fastly 🚀 |
 
 ---
 
-### 2. Correct status in Prometheus
+### 2. CI Test in Github Actions for Terraform
 
 ---
 
-### Before
+- terraform [ fmt | validate | plan ] |
+
+---
+
+![](https://i.imgur.com/OuhGtbs.png)
+
+---
+
+#### Improvement Effect
+
+- Buity Code 🦋 |
+- Check configuration 📝 |
+- Dru-run ☑️ |
+
+---
+
+### 3. Integration Test in Github Actions with Terratest
+
+---
+
+- Terratest in Github Actions (Bye jenkins!) |
+- Add terratest for Azure |
+- Add testcase |
+
+---
+
+#### Improvement Effect
+- Accuracy 🍀 |
+- Fastly 🚀 |
+
+---
+
+![](https://i.imgur.com/pgrco9d.png)
+
+---
+
+### 4. Correct status in Prometheus
+
+---
+
+#### List of hosts (before)
 ![](https://i.imgur.com/1cXVUpu.png)
 
 
 ---
 
-### After1
+#### List of hosts (after)
 ![](https://i.imgur.com/dMD3EVj.png)
 
 ---
 
-### After2
+#### CPU (after)
 ![](https://i.imgur.com/cSkD2op.png)
 
 ---
 
-### 3. CI Test in Github Actions for Terraform
+#### Improvement Effect
+
+- Monitoring accuracy 🚨 |
 
 ---
 
-- terraform [fmt|validate|plan] |
-- ![](https://i.imgur.com/OuhGtbs.png) |
+## Next Action
 
 ---
 
-### Next Action
+### Publish New Orchestration Tool
+- Terratest in Github Actions (AWS/Azure) |
+- Daily Integration Test |
+- Create new documents |
+- Pre Release Check |
+- Make Repository to public |
 
 ---
 
-### 1. Terratest in Github Actions (AWS/Azure)
+### Kubernetes
 
 ---
 
-Daily Integration Test (everyday 9:00 JST)
+![](https://i.imgur.com/E6u0cYl.jpg)
 
 ---
 
-### 2. Create new documents
+- New apps
+- Scalar DL
+- Etc
 
 ---
 
-### 3. Pre Release
+### Coming soon...
 
 ---
 
-### 4. Make Repository to public
+## Finally
+
+---
+
+### I'll ...
+
+---
+
+### Contiune to improvement! 🚧
+
+---
+
+### Keep growing! 🌳
+
+---
+
+### Keep evolving! 🦍
+ 
+
+---
+
+### Thank for your continued support! 🙇
+
+---
+
+## Thanks!
 
 ---
