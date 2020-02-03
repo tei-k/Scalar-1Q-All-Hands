@@ -3,17 +3,18 @@
 　  
 
 
-　   2020.02.03
+　　　2020.02.03
+
 　　　id:@tei-k
 ---
 ### $WHOAMI
 
 ![](https://s.gravatar.com/avatar/6a288829cb26612a60633169a0ea480b.jpeg)
 
-- id: @tei-k (Kun Tei)
-- Job: FE (SRE & Infrastructure)
+- Name: Kun Tei (@tei-k)
+- Job: Freelance Engineer (SRE & Infrastructure)
 - Language:
-  - Terraform:, :Ansible:, :Packer:, Python, :Ruby:, :GO:
+  - Terraform | Ansible | Docker | Packer | Python | Ruby | GO | ...
   - 🇨🇳🇯🇵🇰🇷...
 - Join: 2019/12/02 〜 (Full Time)
 
@@ -66,7 +67,7 @@
 
 ## Contributions 👷
 - New design for Orchestration Tool |
-- UP terraform version to latest |
+- UP terraform version to latest with HCL2 |
 - CI Test in Github Actions for Terraform |
 - Integration Test in Github Actions with Terratest |
 - Display correct status in Prometheus |
@@ -91,6 +92,11 @@ https://github.com/scalar-labs/scalar-terraform
 
 ---
 
+🤔
+module.scalar.module.scalardl_bai.module.cassandra.module.cassandra_cluster.azurerm_resource_group.vm
+
+---
+
 #### New
 - network -> |
 - module (scalardl) -> |
@@ -99,6 +105,14 @@ https://github.com/scalar-labs/scalar-terraform
 ---
 
 ![](https://i.imgur.com/Jm8N6hk.jpg)
+
+---
+
+![](https://i.imgur.com/xwZqXfQ.png)
+
+---
+😆
+module.cassandra.module.cassy_cluster.azurerm_resource_group.vm
 
 ---
 
@@ -231,6 +245,6 @@ https://github.com/scalar-labs/scalar-terraform
 
 ---
 
-## Thanks!
+## End
 
 ---
